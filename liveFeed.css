@@ -1,0 +1,113 @@
+:root {
+    --primary-color: #f0f0f0; /* Light text color for contrast */
+    --secondary-color: #00cc66; /* Accent color remains the same */
+    --text-color: #e0e0e0; /* Lighter grey text color */
+    --background-color: #1a1a1a; /* Dark background color */
+    --card-background: #000000; /* Dark background for cards */
+    --card-shadow: rgba(255, 255, 255, 0.1); /* Lighter shadow for a soft look */
+    --video-padding: 10px; /* Padding remains the same */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 2rem; /* Increased gap for spacing */
+    width: 90%;
+    max-width: 1200px;
+    height: 80vh; /* Limit height to prevent scrollbar */
+}
+
+.video-container {
+    background-color: var(--card-background); /* Dark background for the container */
+    border-radius: 12px; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px var(--card-shadow); /* Lighter shadow */
+    text-align: center;
+    position: relative; /* For positioning elements inside */
+    overflow: hidden; /* Ensure content doesn't overflow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth zoom effect */
+    display: flex; /* Center content */
+    align-items: center;
+    justify-content: center;
+    padding: var(--video-padding); /* Padding to create space for the black box */
+    box-sizing: border-box; /* Include padding in total width/height */
+}
+
+.video-container:hover {
+    cursor: pointer;
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 6px 12px var(--card-shadow); /* Slightly enhanced shadow on hover */
+}
+
+.video-container::before {
+    content: attr(data-position); /* Display position for clarity */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2); /* Light overlay background */
+    color: var(--primary-color);
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1rem; /* Reduced font size */
+    font-weight: bold;
+    border-bottom: 2px solid var(--secondary-color); /* Accent border */
+}
+
+.video-wrapper {
+    background-color: var(--card-background); /* Dark background for the wrapper */
+    border-radius: 8px; /* Slightly rounded corners */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+video {
+    border-radius: 8px; /* Rounded edges */
+    box-shadow: 0 2px 4px var(--card-shadow); /* Subtle shadow */
+    width: 100%;
+    height: 100%; /* Ensures the video fills the container */
+    object-fit: cover; /* Ensures the video covers the container without overflow */
+}
+
+.error-message {
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin-top: 1rem;
+    display: none;
+    font-size: 0.9rem; /* Reduced font size */
+}
+
+@media (max-width: 768px) {
+    .video-grid {
+        grid-template-columns: 1fr; /* Stack videos in a single column on smaller screens */
+        grid-template-rows: repeat(4, 1fr); /* Stack videos vertically */
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}

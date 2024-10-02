@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="liveFeed.css" />
+    <title>Live Feed</title>
+  </head>
+
+  <body>
+    <h1>Live Camera Feeds (Traffic Junction)</h1>
+    <div class="video-grid">
+      <div class="video-container" data-position="North">
+        <div class="video-wrapper">
+          <video src="/videos/video1.mp4" id="feed1" autoplay loop></video>
+        </div>
+        <p id="error-feed1" class="error-message">Feed 1 is not available!</p>
+      </div>
+      <div class="video-container" data-position="East">
+        <div class="video-wrapper">
+          <video src="/videos/video2.mp4" id="feed2" autoplay loop></video>
+        </div>
+        <p id="error-feed2" class="error-message">Feed 2 is not available!</p>
+      </div>
+      <div class="video-container" data-position="South">
+        <div class="video-wrapper">
+          <video src="/videos/video3.mp4" id="feed3" autoplay loop></video>
+        </div>
+        <p id="error-feed3" class="error-message">Feed 3 is not available!</p>
+      </div>
+      <div class="video-container" data-position="West">
+        <div class="video-wrapper">
+          <video src="/videos/video4.mp4" id="feed4" autoplay loop></video>
+        </div>
+        <p id="error-feed4" class="error-message">Feed 4 is not available!</p>
+      </div>
+    </div>
+
+    <script>
+      window.onload = () => {
+        const feeds = [
+          { id: "feed1", errorId: "error-feed1" },
+          { id: "feed2", errorId: "error-feed2" },
+          { id: "feed3", errorId: "error-feed3" },
+          { id: "feed4", errorId: "error-feed4" },
+        ];
+
+        feeds.forEach((feed) => {
+          const videoElement = document.getElementById(feed.id);
+          const errorElement = document.getElementById(feed.errorId);
+
+          videoElement.onerror = () => {
+            videoElement.style.display = "none";
+            errorElement.style.display = "block";
+          };
+        });
+      };
+    </script>
+  </body>
+</html>

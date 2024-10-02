@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRAFFIC FLOW OPTIMIZATION</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="logo"><h1>TRAFFIC FLOW OPTIMIZATION</h1></div>
+        <ul>
+          <li><a href="#innovations">Features</a></li>
+          <li><a href="#how-it-works">How it works</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero section with background video -->
+      <section id="hero">
+        <!-- Video or image as background -->
+        <video autoplay muted loop id="hero-video">
+          <source src="/videos/hero-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <!-- Overlay text -->
+        <div class="hero-text">
+          <h1>Making Traffic Smarter, One Signal at a Time</h1>
+          <p>
+            We're transforming traffic management with AI! Our innovative system
+            uses cutting-edge object detection to count vehicles at
+            intersections and automatically adjust traffic signal timings. This
+            reduces congestion, improves flow, and helps make roads safer for
+            everyone.
+          </p>
+          <a href="#statistics" class="btn btn-primary">Know More</a>
+          <a href="liveFeed.html" class="btn btn-secondary"
+            >Watch the Live Feed</a
+          >
+        </div>
+      </section>
+
+      <!-- Key Features Section -->
+      <section id="innovations">
+        <h2>Key Features</h2>
+        <div class="innovation-grid">
+          <!-- Innovation 1: Real-Time Traffic Data -->
+          <div class="innovation-card">
+            <h3>Real-Time Traffic Data</h3>
+            <p class="statistic">
+              According to a recent McKinsey study, the implementation of
+              real-time data into your city's road logistics can help cut
+              commuting time by upwards of 15%
+            </p>
+            <p>
+              Our system continuously updates traffic data, providing insights
+              into current road conditions, allowing for better traffic flow
+              management and quicker responses to congestion. This real-time
+              data enables smarter decision-making to avoid bottlenecks before
+              they form.
+            </p>
+            <div class="resources">
+              <a
+                href="https://blog.goodvisionlive.com/how-real-time-traffic-data-helps-reduce-commute-times-and-what-that-means-for-your-city"
+                target="_blank"
+                >Source (Good Vision Live (Blog))</a
+              >
+            </div>
+            <div class="video-wrapper">
+              <video
+                src="/videos/real-time_vid.mp4"
+                controls
+                muted
+                loop
+                width="250"
+              ></video>
+            </div>
+          </div>
+
+          <!-- Innovation 2: Signal Prioritization for Emergency Vehicles -->
+          <div class="innovation-card">
+            <h3>Signal Prioritization for Emergency Vehicles</h3>
+            <p class="statistic">
+              The chance of survival is reduced by 7% to 10% for every minute
+              emergency medical assistance is delayed. Likewise, the
+              consequences of delayed arrival of police, firefighters, and other
+              emergency services can be grave.
+            </p>
+            <p>
+              Traffic signals automatically adjust to give priority to emergency
+              vehicles, reducing response times and minimizing disruptions for
+              other road users. This helps ensure that emergency services reach
+              their destination faster, saving crucial time.
+            </p>
+            <div class="resources">
+              <a
+                href="https://intellias.com/smart-traffic-signals/"
+                target="_blank"
+                >Source (Intellias)</a
+              >
+            </div>
+            <div class="video-wrapper">
+              <video
+                src="/videos/emergency_vid.mp4"
+                controls
+                muted
+                loop
+                height="450"
+              ></video>
+            </div>
+          </div>
+
+          <!-- Innovation 3: Spillback Control -->
+          <div class="innovation-card">
+            <h3>Spillback Control</h3>
+            <p class="statistic">
+              Over 28% reduction in total vehicle delay of the system is
+              achieved with respect to the optimal signal timing that ignores
+              the spillback effects.
+            </p>
+            <p>
+              By managing vehicle queues, our system prevents congestion from
+              spreading beyond intersections, ensuring smooth traffic flow even
+              during peak hours. This proactive control helps avoid gridlock and
+              keeps intersections clear for efficient traffic movement.
+            </p>
+            <div class="resources">
+              <a
+                href="https://ieeexplore.ieee.org/abstract/document/9147494"
+                target="_blank"
+                >Source (IEEE Explore)
+              </a>
+            </div>
+            <div class="video-wrapper">
+              <video
+                src="/videos/spillback_vid.mp4"
+                controls
+                muted
+                loop
+                height="450"
+              ></video>
+            </div>
+          </div>
+
+          <!-- Innovation 4: Environmental Impact -->
+          <div class="innovation-card">
+            <h3>Environmental Impact</h3>
+            <p class="statistic">
+              Intelligent Transportation Systems (ITS), such as through adaptive
+              signal control, can reduce greenhouse gas (GHG) emissions by 5% to
+              10%
+            </p>
+            <p>
+              Optimized traffic flow leads to smoother driving, cutting down
+              idle time and reducing harmful emissions, contributing to a
+              cleaner environment. With less stop-and-go traffic, fuel
+              consumption is reduced, making urban areas more sustainable.
+            </p>
+            <div class="resources">
+              <a
+                href="https://link.springer.com/article/10.1007/s40518-015-0032-y"
+                target="_blank"
+                >Source (Springer Link)</a
+              >
+            </div>
+            <div class="video-wrapper">
+              <video
+                src="/videos/environ-impact_vid.mp4"
+                controls
+                muted
+                loop
+                height="450"
+              ></video>
+            </div>
+          </div>
+
+          <!-- Innovation 5: Thermal Cameras-->
+          <div class="innovation-card">
+            <h3>Thermal Cameras for Improved Visibility</h3>
+            <p class="statistic">
+              Thermal imaging cameras can detect vehicles and pedestrians in any
+              lighting or weather condition, enhancing safety and improving
+              response times for better traffic management.
+            </p>
+            <p>
+              Thermal cameras provide accurate vehicle and pedestrian detection
+              in all weather and lighting conditions, improving traffic safety
+              and ensuring reliable data for traffic management. This technology
+              enhances visibility at night and in poor weather, reducing
+              accident risks.
+            </p>
+            <div class="resources">
+              <a
+                href="https://www.flir.ca/discover/traffic/public-transportation/thermal-imaging-for-safety-and-efficiency-in-public-transportation/"
+                target="_blank"
+                >Source (Teledyne FLIR)</a
+              >
+            </div>
+            <div class="video-wrapper">
+              <video
+                src="/videos/thermal_vid4.mp4"
+                controls
+                muted
+                loop
+                height="450"
+              ></video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Further Features Section -->
+      <section id="further-features">
+        <h1>Other Features of Our System</h1>
+        <div class="further-features-content">
+          <div class="additional-features">
+            <!-- Feature 1: Multi-Junction Management -->
+            <div class="additional-feature">
+              <div class="image-wrapper">
+                <img
+                  src="/image/multi-traffic.jpg"
+                  alt="Multi-Junction Management"
+                  height="250"
+                />
+              </div>
+              <h2>1. Multi-Junction Management</h2>
+              <p>
+                The system is capable of managing traffic signals across
+                multiple junctions, ensuring seamless traffic flow between
+                intersections.
+              </p>
+            </div>
+
+            <!-- Feature 2: Validate Traffic Data with Maps -->
+            <div class="additional-feature">
+              <div class="image-wrapper">
+                <img
+                  src="/image/maps_api.jpg"
+                  alt="Validate Traffic Data"
+                  height="250"
+                />
+              </div>
+              <h2>2. Validate Traffic Data Using Maps</h2>
+              <p>
+                Integration with Google Maps, Apple Maps, and other platforms to
+                validate traffic data for real-time traffic monitoring and
+                updates.
+              </p>
+            </div>
+
+            <!-- Feature 3: Help in Urban Planning -->
+            <div class="additional-feature">
+              <div class="image-wrapper">
+                <img
+                  src="/image/urban_planning.jpg"
+                  alt="Urban Planning"
+                  height="250"
+                />
+              </div>
+              <h2>3. Help in Urban Planning</h2>
+              <p>
+                Leveraging traffic data insights to assist in city planning and
+                infrastructure development, ensuring better road designs and
+                reduced congestion.
+              </p>
+            </div>
+
+            <!-- Feature 4: Lane Management -->
+            <div class="additional-feature">
+              <div class="image-wrapper">
+                <img
+                  src="/image/lane_management_1.jpg"
+                  alt="Lane Management"
+                  height="250"
+                />
+              </div>
+              <h2>4. Lane Management</h2>
+              <p>
+                Implementing lane-specific management strategies, such as
+                dynamic lane allocation, to improve traffic distribution and
+                reduce bottlenecks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How It Works Section -->
+      <section id="how-it-works">
+        <h1>How Our System Works</h1>
+        <div class="how-it-works-content">
+          <div class="steps">
+            <div class="step">
+              <h2>1. Real-Time Video Stream</h2>
+              <p>
+                The system receives real-time video feeds from traffic cameras,
+                capturing live footage from various intersections.
+              </p>
+            </div>
+            <div class="step">
+              <h2>2. AI-Powered Vehicle Detection</h2>
+              <p>
+                Advanced AI algorithms analyze the video feed to detect and
+                count vehicles at each intersection.
+              </p>
+            </div>
+            <div class="step">
+              <h2>3. Traffic Signal Optimization</h2>
+              <p>
+                Based on the vehicle counts, the system adjusts traffic signal
+                timings to optimize traffic flow and reduce congestion.
+              </p>
+            </div>
+            <div class="step">
+              <h2>4. Data Collection and Reporting</h2>
+              <p>
+                The system collects data on traffic patterns and performance,
+                which is used to generate reports and insights for city
+                planners.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Real Time Benefits Section -->
+      <section id="features">
+        <h1>Real-World Benefits</h1>
+        <div class="feature-grid">
+          <!-- Feature 1 -->
+          <div class="feature-item">
+            <h2><strong>Emergency Vehicle Priority</strong></h2>
+            <div class="feature-item-content">
+              <div>
+                <h4>
+                  Reduce emergency response times, improving survival rates.
+                </h4>
+                <p>Gives green lights to emergency vehicles, saving lives.</p>
+                <small>(Source: American Heart Association)</small>
+              </div>
+              <div>
+                <a
+                  href="https://youtu.be/yFCm-rG2us4?si=c_kUhiQ5ZyARM811"
+                  class="video-link"
+                  target="_blank"
+                >
+                  <img
+                    src="/image/emergency_pic.jpg"
+                    alt="Emergency Vehicle Priority Video"
+                    width="450"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-item">
+            <h2><strong>Environmental Impact Reduction</strong></h2>
+            <div class="feature-item-content">
+              <div>
+                <h4>
+                  Cut vehicle emissions by up to 30%, improving air quality.
+                </h4>
+                <p>
+                  Optimizes traffic flow to reduce pollution and greenhouse
+                  gases.
+                </p>
+                <small>(Source: Environmental Protection Agency)</small>
+              </div>
+              <div>
+                <a
+                  href="https://www.youtube.com/watch?v=B6XbFOeyYzI"
+                  class="video-link"
+                  target="_blank"
+                >
+                  <img
+                    src="/image/environ-impact_pic.jpg"
+                    alt="Environmental Impact Reduction Video"
+                    width="450"
+                    style="height: 200px"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-item">
+            <h2><strong>Reduction in Congestion</strong></h2>
+            <div class="feature-item-content">
+              <div>
+                <h4>Reduce congestion by 10%, boosting urban productivity.</h4>
+                <p>Dynamic signal adjustments for smoother commutes.</p>
+                <small>(Source: Urban Transport Group)</small>
+              </div>
+              <div>
+                <a
+                  href="https://www.youtube.com/watch?v=aht2ylHkK7Q"
+                  class="video-link"
+                  target="_blank"
+                >
+                  <img
+                    src="/image/red-conges_pic.jpg"
+                    alt="Reduction in Congestion Video"
+                    width="450"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="feature-item">
+            <h2><strong>Cost Savings for City Governments</strong></h2>
+            <div class="feature-item-content">
+              <div>
+                <h4 style="margin-top: -26rem">
+                  Cut infrastructure costs by up to 20% with reduced wear and
+                  tear.
+                </h4>
+                <p>Less need for repairs due to smoother traffic flow.</p>
+                <small>(Source: City Infrastructure Report)</small>
+              </div>
+              <div>
+                <a
+                  href="https://www.youtube.com/watch?v=eYEGpIVsInQ"
+                  class="video-link"
+                  target="_blank"
+                >
+                  <img
+                    src="/image/cost-saving_pic.jpg"
+                    alt="Cost Savings for City Governments Video"
+                    width="450"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature 5 -->
+          <div class="feature-item">
+            <h2><strong>Improved Traffic Safety</strong></h2>
+            <div class="feature-item-content">
+              <div>
+                <h4>Reduce accident rates by up to 25% at intersections.</h4>
+                <p>Improves safety with optimized signal management.</p>
+                <br />
+                <small>(Source: Road Safety Foundation)</small>
+              </div>
+              <div>
+                <a
+                  href="https://www.youtube.com/watch?v=sZmC1tW2R7Y"
+                  class="video-link"
+                  target="_blank"
+                >
+                  <img
+                    src="/image/traffic-safety_pic.jpg"
+                    alt="Improved Traffic Safety Video"
+                    width="450"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature 6 -->
+          <div class="feature-item">
+            <h2><strong>Optimized Traffic for Logistics</strong></h2>
+            <div class="feature-item-content">
+              <div>
+                <h4 style="margin-top: -26rem">
+                  Boosts efficiency by reducing delays for delivery and
+                  logistics services.
+                </h4>
+                <p>
+                  Minimizes traffic jams, improving operational efficiency and
+                  cutting delivery costs.
+                </p>
+                <br />
+                <small>(Source: Logistics Management Report)</small>
+              </div>
+              <div>
+                <a
+                  href="https://www.youtube.com/watch?v=example"
+                  class="video-link"
+                  target="_blank"
+                >
+                  <img
+                    src="/image/logistic_pic.jpg"
+                    alt="Optimized Traffic for Logistics Video"
+                    width="450"
+                    style="height: 250px"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Traffic Flow Optimization. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
